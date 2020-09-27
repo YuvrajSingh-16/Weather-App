@@ -82,7 +82,10 @@ app.get('/weather', (req, res) => {
               location: data.location.region,
               temperature: data.temperature,
               name: "UVSinghK",
-              time: data.location.localtime
+              observation_time: data.current.observation_time,
+              currentTime: data.location.localtime,
+              visibility: data.current.visibility,
+              humidity: data.current.humidity
             })
           }
 
@@ -93,7 +96,10 @@ app.get('/weather', (req, res) => {
             location: data.location.region,
             temperature: data.temperature,
             name: "UVSinghK",
-            time: data.location.localtime
+            observation_time: data.current.observation_time,
+            currentTime: data.location.localtime,
+            visibility: data.current.visibility,
+            humidity: data.current.humidity
         })
         }
     })

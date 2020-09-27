@@ -9,12 +9,14 @@ const forecast = (location, callback) => {
         } else if(body.error){
             callback('Unable to find the location.', undefined)
         } else {
+            console.log(body)
             const {current} = body
             console.log(body.location.name + "," , body.location.region + "," , body.location.country)
             callback(undefined, {
                 description: current.weather_descriptions,
                 temperature: current.temperature,
-                location: body.location
+                location: body.location,
+                current: current
             })
         }
     })
