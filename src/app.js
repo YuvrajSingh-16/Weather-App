@@ -10,6 +10,7 @@ const partialsPath = path.join(__dirname, "../templates/partials")
 
 // creating app object from top level express() function
 const app = express()
+const port = process.env.PORT || 3000
 
 // Setting handlebars engine and views location
 app.set('view engine', 'hbs')  // view engine to handlebar
@@ -115,6 +116,6 @@ app.get("*", (req, res) => {
 })
 
 // Listening for connection request on specific port
-app.listen(1602, () => {
-  console.log("Server up running on port 1602")  
+app.listen(port, () => {
+  console.log("Server up running on port " + port)  
 })
