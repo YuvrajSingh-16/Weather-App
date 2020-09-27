@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current Weather</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        {{>header}}
+            <h4>{{forecast}} with temperature {{temperature}} degrees outside</h4>
+            <p>Query location : {{address}}, {{location}}</p>
+        {{>footer}}
+    </body>
+</html>
