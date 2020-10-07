@@ -50,6 +50,7 @@ input {
     border: 1px solid #cccccc ;
     padding: 8px;
     align-items: center;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 button {
@@ -59,6 +60,7 @@ button {
     color: white;
     border-radius: 4px;
     padding: 8px;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 #details{
