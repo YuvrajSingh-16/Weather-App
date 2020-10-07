@@ -23,7 +23,7 @@ app.use(express.static(publicDirPath))
 // Route and renders
 app.get('', (req, res) => {
   res.render('index', {
-    title: "Weather app",
+    title: "Weather",
     name: "UVSinghK"
   })
 })
